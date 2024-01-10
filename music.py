@@ -20,7 +20,8 @@ class MusicCog(commands.Cog):
                            'options': '-vn'}
         self.ydl_opt = {'format': "bestaudio/best",
                         'source_address': '0.0.0.0',
-                        'noplaylist': 'True'}
+                        'noplaylist': 'True',
+                        'cookiefile': 'cookies.txt'}
         self.ydl = YoutubeDL(self.ydl_opt)
 
     def search_yt(self, req):
@@ -96,7 +97,7 @@ class MusicCog(commands.Cog):
                 await ctx.send("```❌ Incorrect format!```")
             else:
                 if self.is_playing:
-                    await ctx.send(f"**#{len(self.queue) + 2} -'{song['title']}'** added to the queue")
+                    await ctx.send(f"**#{len(self.queue) + 2} '{song['title']}'** added to the queue")
                 else:
                     await ctx.send(f"**'{song['title']}'** added to the queue")
                 self.queue.append([song, voice_channel])
@@ -135,7 +136,7 @@ class MusicCog(commands.Cog):
     async def queue(self, ctx):
         retval = ""
         for i in range(0, len(self.queue)):
-            retval += f"#{i + 1} -" + self.queue[i][0]['title'] + "\n"
+            retval += f"{i + 1}. " + self.queue[i][0]['title'] + "\n"
 
         if retval != "":
             await ctx.send(f"```queue:\n{retval}```")
