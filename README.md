@@ -3,8 +3,8 @@
  <img width="400px" src="BotIcon.jpg" alt=""/>
 </p>
 
-Thanks to yt-dlp and ffmpeg, Tilttee plays audio from YouTube/Twitch/Yandex Music into your voice channel.
-Use this [link](https://discord.com/api/oauth2/authorize?client_id=1175331860205805639&permissions=8&scope=bot) to invite a bot to your server 
+Thanks to yt-dlp and ffmpeg, Tilttee plays audio from YouTube/Twitch/Yandex Music into your voice channel. 
+- Use this [link](https://discord.com/api/oauth2/authorize?client_id=1175331860205805639&permissions=8&scope=bot) to invite my bot to your server (it can be turned off)
 ## 📝 Requirements
 1. Discord Bot Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) 
 2. Give Administrator permisson for bot
