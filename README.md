@@ -9,8 +9,9 @@ Thanks to yt-dlp and ffmpeg, Tilttee plays audio from YouTube/Twitch/Yandex Musi
 1. Discord Bot Token [Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot) 
 2. Give Administrator permisson for bot
 ## ⚙️ Configuration:
-1) Insert your bot’s token into the .env file
-2) If you want to use the Yandex Music service, replace the cookie.txt with yours (more on this below)
+1) Install the required libraries using requirements.txt
+2) Insert your bot’s token into the .env file
+3) If you want to use the Yandex Music service, replace the cookie.txt with yours (more on this below)
 ### 🎵 Support for Yandex Music
 To use Yandex Music you need:
 1) Go to the service [website](https://music.yandex.ru/home) and log in
