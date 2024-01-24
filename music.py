@@ -37,9 +37,8 @@ class MusicCog(commands.Cog):
     async def play_next(self, ctx):
         if len(self.queue[ctx.guild.id]) > 0:
             self.is_playing[ctx.guild.id] = True
-
             # get the first url
-            m_url = self.queue[0][0]['source']
+            m_url = self.queue[ctx.guild.id][0][0]['source']
 
             # remove the first element as you are currently playing it
             self.queue[ctx.guild.id].pop(0)
